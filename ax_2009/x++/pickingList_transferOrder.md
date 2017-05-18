@@ -1,4 +1,4 @@
-#Transfer Order: Picking List
+# Transfer Order: Picking List
 It creates a picking list of a transfer order
 
 	InventTransferParmTable inventTransferParmTable;

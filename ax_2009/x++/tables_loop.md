@@ -1,4 +1,4 @@
-#Loop on all fields of all tables
+# Loop on all fields of all tables
  
 	static void StandardTablesInfoWPC(Args _args)
 	{

@@ -1,4 +1,4 @@
-#Sales Order: Picking List
+# Sales Order: Picking List
 It creates a picking list of a sales order
 
 	SalesFormLetter salesFormLetter;

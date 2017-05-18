@@ -1,4 +1,4 @@
-#Where the inventDimId is used
+# Where the inventDimId is used
 It checks all tables to find where is used the selected InventDimId
  
 	static void checkInventDimIdERA(Args _args)
