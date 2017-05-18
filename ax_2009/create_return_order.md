@@ -66,7 +66,7 @@
 
 ## Create line
 	
-	SalesLine createReturnOrderLine(	ItemId  _itemId,
+	SalesLine createReturnOrderLine(    ItemId  _itemId,
 	                                    Qty     _qty,
 	                                    SalesId _ROSalesId,
 	                                    SalesId _salesId = '')
@@ -122,7 +122,7 @@
 	    pvInventDim           = inventDim::findOrCreate(inventDim);
 	    salesLine.InventDimId = pvInventDim.inventDimId;
 
-	    salesLine.createLine(true, false, true, false, false,false,false,false);
+	    salesLine.createLine(true, false, true, false, false, false, false, false);
 	    salesLine.ExpectedRetQty = -_qty;
 	    salesLine.update();
 
