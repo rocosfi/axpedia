@@ -15,8 +15,7 @@ or using inventOnHand class
 	static InventOnhand newItemDim(
 	                  ItemId             _itemId,
 	                  InventDim          _inventDim,
-	                  InventDimParm      _inventDimParm
-	                  )
+	                  InventDimParm      _inventDimParm)
 	{
 	    InventOnhand inventOnhand = new InventOnhand();
 	    ;
