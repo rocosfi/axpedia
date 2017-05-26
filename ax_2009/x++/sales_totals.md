@@ -1,5 +1,6 @@
 # Sales totals
 SalesTotals class manipulates the total amount of a sales order
+
 	SalesTotals salesTotals;
     SalesTable  salesTable;
 
