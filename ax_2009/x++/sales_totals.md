@@ -4,12 +4,12 @@ SalesTotals class manipulates the total amount of a sales order
 	SalesTotals salesTotals;
     SalesTable  salesTable;
 
-    TaxAmountCur salesAmt,taxAmount,amt1,discountAmt,totcharges,totOfOrder,contributionRatio;
+    TaxAmountCur salesAmt, taxAmount, amt1, discountAmt, totcharges, totOfOrder, contributionRatio;
     Tax tax;
 
     ;
-    salesTotals = SalesTotals::construct(_salesTable);
-    tax 		= Tax::construct(NoYes::No);
+    salesTotals 	= SalesTotals::construct(_salesTable);
+    tax 			= Tax::construct(NoYes::No);
 
     salesAmt          = salesTotals.totalBalance();
 	taxAmount         = salesTotals.totalTaxAmount();
