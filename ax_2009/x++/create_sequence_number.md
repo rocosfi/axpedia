@@ -1,6 +1,6 @@
 # Create a sequence number #
 
-1. Create an EDT just like i have created 'ReasonCode'
+1. Create an EDT, for example 'ReasonCode' (remember relation to the main table)
 2. Go to the Module Table : ex. SalesParameters
 and Create a method:
 
