@@ -45,7 +45,7 @@ Your driver is ready and with a simple statement you can retrieve your data. For
 	        myResultSet=myStatement.executeQuery(mySQLStatement);
 	        while (myResultSet.next())
 	        {
-	            info(strFmt("%1 %2", myResultSet.getString(1), myResultSet.getString(2));
+	            info(strFmt("%1 %2", myResultSet.getString(1), myResultSet.getString(2)));
 	        }
 	    } 
 	    catch
