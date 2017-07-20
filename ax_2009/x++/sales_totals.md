@@ -4,7 +4,7 @@ SalesTotals class manipulates the total amount of a sales order
 	SalesTotals salesTotals;
     SalesTable  salesTable;
 
-    TaxAmountCur salesAmt, taxAmount, amt1, discountAmt, totcharges, totOfOrder, contributionRatio;
+    TaxAmountCur salesAmt, taxAmount, amt1, discountAmt, totcharges, totOfOrder, contributionRatio, totalAmountMST;
     Tax tax;
 
     ;
@@ -17,6 +17,8 @@ SalesTotals class manipulates the total amount of a sales order
 	totcharges        = salesTotals.totalMarkup();
 	totOfOrder        = salesTotals.totalAmount();
 	contributionRatio = salesTotals.totalContributionRatio();
+	totalAmountMST    = salesTotals.currencyCode() == CompanyInfo::standardCurrency() ? 
+                    totalAmount : Currency::amountCur2MST(totalAmount, CompanyInfo::standardCurrency());
 
     info(Strfmt("Subtotal Amount %1",salesAmt ));
     info(Strfmt("The tax amount is %1",taxAmount ));
